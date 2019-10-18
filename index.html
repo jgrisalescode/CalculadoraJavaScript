@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculadora JavaScript</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">		
+</head>
+
+<body>
+	<header></header>
+	<nav></nav>
+	<section>
+		<article>
+			<table class="marcoCalculadora" cellspacing="0" cellpadding="0" align="center">
+				<thead>
+					<tr align="right">
+						<td colspan="4">
+							<input class="display" type="text" name="display" id="display" value="0" maxlength="500" readonly>							
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><button class="botonOpcion" onclick="limpiar()">C</button></td>
+						<td><button class="botonOpcion" onclick="historial()"><img src="./images/history.svg" alt="history"></button></td>
+						<td><button class="botonOpcion" onclick="corregir()"><img src="./images/undo.svg" alt="deshacer"></button></td>
+						<td><button class="botonOperador" onclick="asignarOperador(`/`)">÷</button></td>
+					</tr>
+					<tr>
+						<td><button class="botonNumero" onclick="asignarValor(7)">7</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(8)">8</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(9)">9</button></td>
+						<td><button class="botonOperador" onclick="asignarOperador(`*`)">x</button></td>
+					</tr>
+					<tr>
+						<td><button class="botonNumero" onclick="asignarValor(4)">4</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(5)">5</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(6)">6</button></td>
+						<td><button class="botonOperador" onclick="asignarOperador(`-`)">-</button></td>
+					</tr>
+					<tr>
+						<td><button class="botonNumero" onclick="asignarValor(1)">1</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(2)">2</button></td>
+						<td><button class="botonNumero" onclick="asignarValor(3)">3</button></td>
+						<td><button class="botonOperador" onclick="asignarOperador(`+`)">+</button></td>
+					</tr>
+					<tr>
+						<td><button class="botonPendiente"></button></td>
+						<td><button class="botonNumero" onclick="asignarValor(0)">0</button></td>
+						<td><button class="botonNumero" onclick="ponerComa(`.`)">,</button></td>
+						<td><button class="botonCalcular" onclick="calcular()">=</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+	<aside>
+		<div class="historial" id="historial">
+
+		</div>
+	</aside>	
+	<footer></footer>	
+	<script src="./js/index.js"></script>	
+</body>
+
+</html>

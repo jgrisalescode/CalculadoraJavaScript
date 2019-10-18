@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background: #080808;
+}
+
+.display {
+    height: 212px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    width: 95%;
+    font-size: 30px;
+    color: white;
+    background: #080808;
+    border: none;    
+    text-align: right;
+    outline: none;
+}
+
+.historial {
+    color: white;
+    text-align: center;
+    width: 370px;
+    border: solid 2px #707070;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+article, section {
+    align-content: center;
+}
+
+table {    
+    margin-top: 16px;
+    border: solid 2px #707070;
+    border-radius: 10px;
+    width: 370px;
+    height: 600px;
+}
+
+table thead tr td {
+    text-align: center;
+}
+
+table tbody {
+    height: 380px;
+}
+
+table tbody tr td {
+    text-align: center;
+}
+
+.botonNumero {
+    color: white;
+    font-size: 40px;    
+    text-align: center;    
+}
+
+.botonOpcion {
+    color: #A35726;
+    font-size: 40px;
+    text-align: center;    
+}
+
+.botonOpcion img {
+    margin: 0;
+    padding: 0;
+}
+
+.botonOperador {
+    color: #3E7E32;
+    font-size: 40px;
+    text-align: center; 
+}
+
+.botonCalcular {
+    background: #477417;
+    color: white;
+    font-size: 40px;    
+    text-align: center;
+}
+
+.botonCalcular:hover {
+    background: #597041;
+}
+
+.botonPendiente {
+    display: none;
+}
+
+table thead {
+    height: 300px;
+    text-align: center;
+}
+
+button {
+    width: 78px;
+    height: 64px;
+    border: none;
+    border-radius: 30px;
+    background: #1F1F1F;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #505050;
+}
