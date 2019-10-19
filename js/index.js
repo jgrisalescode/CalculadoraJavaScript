@@ -68,7 +68,7 @@ const calcular = () => {
 
 // Una futura funcionalidad para que el usuario vea las operaciones que ha hecho
 const historial = () => {
-    document.getElementById('historial').innerHTML = `<p>${historialOperaciones}</p>`    
+    document.getElementById('historial').innerHTML = `<p>${historialOperaciones}</p>`
 }
 
 // Esta funcion se encaraga de validad que no sean introducidas más de una coma decilam por número
@@ -79,9 +79,9 @@ const contarComas = (cadena, coma) => {
     for (let index = 0; index < nuevoDisplay.length; index++) {
         if (nuevoDisplay[index] == coma) {
             contadorComas++
-        }        
+        }
     }
-    return contadorComas    
+    return contadorComas
 }
 
 // Con la ayuda de contarComas, se encarga de asignar el punto decimal
