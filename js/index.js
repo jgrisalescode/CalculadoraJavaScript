@@ -60,7 +60,7 @@ const calcular = () => {
 
     historialOperaciones = `${historialOperaciones}+${display.value} = ${eval(display.value)}\n`
     if (eval(display.value) == "Infinity") {
-        display.value = "No se puede dividir por CERO"
+        display.value = "Error !!"
     } else {
         display.value = eval(display.value)
     }
