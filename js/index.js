@@ -55,7 +55,7 @@ const corregir = () => {
     }
 }
 
-// Se envarga de evaluar la cadena generada en el display
+// Se encarga de evaluar la cadena generada en el display
 const calcular = () => {
 
     historialOperaciones = `${historialOperaciones}+${display.value} = ${eval(display.value)}\n`
@@ -84,7 +84,7 @@ const contarComas = (cadena, coma) => {
     return contadorComas
 }
 
-// Con la ayuda de contarComas, se encarga de asignar el punto decimal
+// Con la ayuda de contarComas(cadena, coma), se encarga de asignar el punto decimal
 const ponerComa = (coma) => {
     if (display.value.charAt(display.value.length - 1) == coma) {
         var nuevoDisplay = display.value.substring(0, display.value.length - 1)
